@@ -1,0 +1,136 @@
+$spray: #81cfe0;
+$gallery: #eeeeee;
+$darkBlue: rgba(1,1,182,1);
+$lightBlue: rgba(0,212,255,1);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.activeLink {
+    background-color: white;
+    color: $spray !important;
+    padding: 8px !important;
+    border-radius: 2.5px;
+}
+.activeSec {
+    justify-content: center !important;
+}
+body {width: 100%;}
+.hero {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    margin: 2em 0;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        display: block;
+        font-size: 7em;
+        text-align: center;
+        margin-bottom: 1em;
+        background: linear-gradient(to right, #30CFD0 0%, #066692 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: txtGradient 1s ease-in 0s infinite normal running;
+        
+    }
+}
+#navbarList {
+    width: 100%;
+    background-color: $spray;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s;
+
+    li {
+        list-style-type: none;
+        margin-left: 1em;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px;
+
+            &:hover {
+                background-color: white;
+                color: $spray;
+                padding: 8px;
+                border-radius: 2.5px;
+            }
+        }
+    }
+}
+.sections {
+    width: 100%;
+
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        .sec-container {
+            width: 75%;
+            padding: 20px;
+            text-align: justify;
+            background-color: $gallery;
+            h2 {
+                margin-bottom: 1em;
+            }
+        } 
+    }
+    section:nth-child(even)  {
+        justify-content: flex-end;
+    }
+}
+footer {
+    background: $spray;
+    padding: 3em;
+
+    p {
+        color: #fff;
+    }
+    #scroll2top {
+        display: none;
+        width: 50px;
+        height: 50px;
+        z-index: 99;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        svg {
+            width: 30px;
+        }
+        &:hover {
+            background-color: rgb(49, 49, 49);
+        }
+    }
+}
+
+@keyframes txtGradient {
+    0% {background: linear-gradient(to right, #30CFD0 0%, #01325a 100%);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    25% {background: linear-gradient(to right, #209292 0%, #0754ac 100%);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    50% {background: linear-gradient(to right, #054ab3 0%, #054ab3 100%);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    75% {background: linear-gradient(to right, #0754ac 0%, #209292 100%);-webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;}
+    100% {background: linear-gradient(to right, #01325a 0%, #30CFD0 100%);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+}

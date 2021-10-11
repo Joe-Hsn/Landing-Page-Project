@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.activeLink {
+  background-color: white;
+  color: #81cfe0 !important;
+  padding: 8px !important;
+  border-radius: 2.5px;
+}
+
+.activeSec {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+body {
+  width: 100%;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero h1 {
+  display: block;
+  font-size: 7em;
+  text-align: center;
+  margin-bottom: 1em;
+  background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#066692));
+  background: linear-gradient(to right, #30CFD0 0%, #066692 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: txtGradient 1s ease-in 0s infinite normal running;
+          animation: txtGradient 1s ease-in 0s infinite normal running;
+}
+
+#navbarList {
+  width: 100%;
+  background-color: #81cfe0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  min-height: 10vh;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+
+#navbarList li {
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+#navbarList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px;
+}
+
+#navbarList li a:hover {
+  background-color: white;
+  color: #81cfe0;
+  padding: 8px;
+  border-radius: 2.5px;
+}
+
+.sections {
+  width: 100%;
+}
+
+.sections section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sections section .sec-container {
+  width: 75%;
+  padding: 20px;
+  text-align: justify;
+  background-color: #eeeeee;
+}
+
+.sections section .sec-container h2 {
+  margin-bottom: 1em;
+}
+
+.sections section:nth-child(even) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer {
+  background: #81cfe0;
+  padding: 3em;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer #scroll2top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+footer #scroll2top svg {
+  width: 30px;
+}
+
+footer #scroll2top:hover {
+  background-color: #313131;
+}
+
+@-webkit-keyframes txtGradient {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#01325a));
+    background: linear-gradient(to right, #30CFD0 0%, #01325a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, from(#209292), to(#0754ac));
+    background: linear-gradient(to right, #209292 0%, #0754ac 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#054ab3), to(#054ab3));
+    background: linear-gradient(to right, #054ab3 0%, #054ab3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right top, from(#0754ac), to(#209292));
+    background: linear-gradient(to right, #0754ac 0%, #209292 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#01325a), to(#30CFD0));
+    background: linear-gradient(to right, #01325a 0%, #30CFD0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes txtGradient {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#01325a));
+    background: linear-gradient(to right, #30CFD0 0%, #01325a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, from(#209292), to(#0754ac));
+    background: linear-gradient(to right, #209292 0%, #0754ac 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#054ab3), to(#054ab3));
+    background: linear-gradient(to right, #054ab3 0%, #054ab3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right top, from(#0754ac), to(#209292));
+    background: linear-gradient(to right, #0754ac 0%, #209292 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#01325a), to(#30CFD0));
+    background: linear-gradient(to right, #01325a 0%, #30CFD0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
