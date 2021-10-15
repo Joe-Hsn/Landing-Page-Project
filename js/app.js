@@ -30,7 +30,7 @@ addListElements();
 let ScrollingY = window.scrollY;
 window.addEventListener("scroll", () => {
     if (ScrollingY < window.scrollY) {
-        navbar.style.top = "-10vh";
+        navbar.style.top = "-20vh";
     } else {
         navbar.style.top = "0";
     }
