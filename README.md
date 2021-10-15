@@ -18,6 +18,8 @@
 
 - add smooth scrolling to "go to top" button 
 
+- i used 'scrollIntoView' and make it more smooth
+
 ## it's wrote using: 
 
 - HTML5
