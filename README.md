@@ -4,13 +4,19 @@
 
 - create the navbar with js 
 
-- show/hide the navbar while scrolling BUT I chose to Comment it, becouse it doesn't work well!!! :)
+- show/hide the navbar while scrolling
 
 - add/reomve active class to Nav
 
 - add/reomve active class to sections
 
-- create a "go to top" button   
+- create a "go to top" button 
+
+## Improvements 
+
+- make it responsive
+
+- add smooth scrolling to "go to top" button 
 
 ## it's wrote using: 
 

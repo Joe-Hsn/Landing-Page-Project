@@ -8,13 +8,14 @@ $lightBlue: rgba(0,212,255,1);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 .activeLink {
     background-color: white;
     color: $spray !important;
     padding: 8px !important;
     border-radius: 2.5px;
+    cursor: pointer;
 }
 .activeSec {
     justify-content: center !important;
@@ -32,7 +33,6 @@ body {width: 100%;}
         display: block;
         font-size: 7em;
         text-align: center;
-        margin-bottom: 1em;
         background: linear-gradient(to right, #30CFD0 0%, #066692 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -53,7 +53,7 @@ body {width: 100%;}
 
     li {
         list-style-type: none;
-        margin-left: 1em;
+        cursor: pointer;
         a {
             color: white;
             text-decoration: none;
@@ -121,7 +121,6 @@ footer {
         }
     }
 }
-
 @keyframes txtGradient {
     0% {background: linear-gradient(to right, #30CFD0 0%, #01325a 100%);-webkit-background-clip: text;
         -webkit-text-fill-color: transparent;}
@@ -133,4 +132,68 @@ footer {
        -webkit-text-fill-color: transparent;}
     100% {background: linear-gradient(to right, #01325a 0%, #30CFD0 100%);-webkit-background-clip: text;
         -webkit-text-fill-color: transparent;}
+}
+
+@media (max-width: 768px) {
+    .hero {
+        h1 {
+            font-size: 5em;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .hero {
+        h1 {
+            font-size: 3em;
+        }
+    }
+    #navbarList {
+        justify-content: space-evenly;
+    }
+    .sections {
+        section {
+            .sec-container {
+                font-size: 0.87em;
+            } 
+        }
+    }
+}
+// 375
+@media (max-width: 375px) {
+    .hero {
+        h1 {
+            font-size: 3em;
+        }
+    }
+    .sections {
+        section {
+            .sec-container {
+                font-size: 0.8em;
+            } 
+        }
+    }
+}
+// 320
+@media (max-width: 320px) {
+    .hero {
+        h1 {
+            font-size: 2em;
+        }
+    }
+    #navbarList {
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        align-content: space-between;
+
+    }
+    .sections {
+        section {
+            .sec-container {
+                font-size: 0.7em;
+            } 
+        }
+    }
 }
